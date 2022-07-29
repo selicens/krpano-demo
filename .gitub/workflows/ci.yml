@@ -13,7 +13,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
-          npm run build --base=/
+          npm run build --base=/krpano-demo/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.0
