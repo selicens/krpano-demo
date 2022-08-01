@@ -4,6 +4,6 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/krpano-demo/',
-  publicPath: '/krpano-demo/'
+  base: process.env.NODE_ENV === 'production' ? './' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/krpano-demo/' : '/'
 })
