@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist -r https://github.com/selicens/krpano-demo.git -b gh-pages"
   },
   "dependencies": {
     "vue": "^3.2.37"

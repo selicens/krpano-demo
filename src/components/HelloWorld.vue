@@ -2,7 +2,6 @@
   import { ref, onMounted } from 'vue'
   let krpano = ref(null)
   const krpanoOnready = krpano_interface => {
-    console.log(krpano_interface)
     krpano.value = krpano_interface
   }
   const krpanoOnerror = error => {
@@ -106,8 +105,8 @@
 
   onMounted(() => {
     embedpano({
-      swf:"/static/vtour/tour.swf",
-      xml:"/static/vtour/tour.xml",
+      swf:"src/assets/static/vtour/tour.swf",
+      xml:"src/assets/static/vtour/tour.xml",
       target:"pano",
       html5:"auto",
       mobilescale:1.0,
