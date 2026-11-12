@@ -14,7 +14,8 @@
   </head>
   <body>
     <div id="app"></div>
-    <script src="src/assets/static/vtour/tour.js"></script>
+    <!-- krpano 引擎脚本：vtour/ 位于 public 目录，构建时会复制到 dist 根，用相对路径兼容子路径部署 -->
+    <script src="vtour/tour.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
